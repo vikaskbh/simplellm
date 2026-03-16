@@ -1,0 +1,54 @@
+{
+  "name": "simple-llm",
+  "version": "0.1.0",
+  "description": "A portable multi-LLM routing library for Node.js, Edge, Lambda, and Cloudflare Workers",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md",
+    "LICENSE-PERSONAL",
+    "LICENSE-COMMERCIAL"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "node build.js",
+    "lint": "eslint src/**/*.js tests/**/*.js"
+  },
+  "keywords": [
+    "llm",
+    "openai",
+    "anthropic",
+    "gemini",
+    "claude",
+    "ai",
+    "edge",
+    "serverless",
+    "cloudflare-workers",
+    "lambda",
+    "multi-llm",
+    "router"
+  ],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE-PERSONAL",
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/simple-llm.git"
+  }
+}
